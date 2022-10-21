@@ -19,25 +19,15 @@ Durante a aula de hoje vocês conseguiram debugar uma página simples de post e 
 ​
 # Exercício 1
 ​
-## Colocando a mão na massa para o exercício 1: 
+## Colocando a mão na massa para o exercício: 
 ​
-Nossa aplicação vai ser para o cadastro do usuário em um aplicativo de delivery, já existe uma tela de Cadastro para as informações de login do usuário na aplicação como vocês viram pela manhã, agora vamos criar mais um componente de cadastro chamado TelaCadastroEndereco, onde vocês vão pegar as informações de contato e endereço do usuário:
+Nossa aplicação não está rodando. Verifique os erros e preste atenção em alguns pontos:
 ​
-- Crie uma pasta dentro da pasta Components chamada TelaCadastroEndereco
-- Crie um arquivo chamado TelaCadastroEndereco
-- Crie a estrutura de um componente dentro do arquivo (lembre de exportar o componente)
-- Á página vai precisar ter:
-    - Um input para endereço
-    - Um input para número da residência
-    - um input para telefone
-    - um input para complemento
-    - um botão para ser usado para passar a próxima página
-​
-# Exercício 2
-## Colocando a mão na massa para o Exercício 2.
-​
-- Continue o exercício feito na aula e adicione o componente criado **TelaCadastroEndereco** para seguir o fluxo da renderização condicional, ela deve aparecer depois de cadastrar as informações de login do usuário, o fluxo de páginas deve ocorrer da seguinte ordem: 
-    - TelaLogin >>> TelaCadastro >>> TelaCadastroEndereco >>> TelaUsuarioCadastrado
-
+- Todas as dependências estão instaladas?
+- Quais erros aparecem na tela? procure no google sobre esses erros e suas possíveis soluções;
+- Todos os imports estão feitos?
+- Todas as funções/estados/variaveis estão sendo declaradas corretamente?
+- Todos as props estão sendo enviadas/consumidas corretamente?
+ 
 ## [**Link codesandbox**](https://codesandbox.io/s/debug-exercicio-dgh9wi)
  
