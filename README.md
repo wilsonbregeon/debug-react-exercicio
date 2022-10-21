@@ -17,7 +17,7 @@ Hoje vimos um pouco sobre o debugging, processo de encontrar e corrigir erros em
 ​
 Durante a aula de hoje vocês conseguiram debugar uma página simples de post e comentário. No exercício de hoje à tarde vamos debugar um novo projeto.
 ​
-# Exercício 1
+# Exercício
 ​
 ## Colocando a mão na massa para o exercício: 
 ​
