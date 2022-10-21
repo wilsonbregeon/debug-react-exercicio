@@ -39,5 +39,5 @@ Nossa aplicação vai ser para o cadastro do usuário em um aplicativo de delive
 - Continue o exercício feito na aula e adicione o componente criado **TelaCadastroEndereco** para seguir o fluxo da renderização condicional, ela deve aparecer depois de cadastrar as informações de login do usuário, o fluxo de páginas deve ocorrer da seguinte ordem: 
     - TelaLogin >>> TelaCadastro >>> TelaCadastroEndereco >>> TelaUsuarioCadastrado
 ​
-​#[**Link codesandbox:**](https://codesandbox.io/s/debug-exercicio-dgh9wi)
+​## [**Link codesandbox:**](https://codesandbox.io/s/debug-exercicio-dgh9wi)
  
