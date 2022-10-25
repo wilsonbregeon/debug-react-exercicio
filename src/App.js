@@ -1,16 +1,17 @@
 import React from 'react';
-import CardGrande from './components/CardGrande';
+import CardGrande from './components/CardGrande/CardGrande';
 import ImagemButton from './components/ImagemButton/ImagemButton';
 import styled, { createGlobalStyle } from 'styled-components'
 import imagemPerfil from "./img/DP-Brock.png"
-import { CardPequeno } from './component/CardPequeno';
+import  CardPequeno  from './components/CardPequeno/CardPequeno';
 import downArrow from "./img/down-arrow.png"
 import iconePedra from "./img/rock-symbol.jpg"
 import iconeEstadio from "./img/pewter-gym.jpg"
-import iconeEmail from "./img/email"
-import iconePin from "../img/pin-endereco.png"
+import iconeEmail from "./img/email.png"
+import iconePin from "./img/pin-endereco.png"
 import iconeFB from "./img/facebook-logo-3.png"
 import iconeTT from "./img/twitter-logo-1-1.png"
+
 
 const GlobalStyle = createGlobalStyle`
     *{
@@ -64,7 +65,7 @@ function App() {
       <SectionPagina>
         <Titulos>Dados pessoais</Titulos>
         <CardGrande
-          imagem={perfil.image}
+          imagem={perfil.imagem}
           nome={perfil.nome}
           descricao={perfil.descricao}
         />
@@ -78,15 +79,13 @@ function App() {
       <SectionPagina>
         <CardPequeno
           imagem={iconeEmail}
-          nome="E-mail:"
-          descricao={perfil}
+          nome={perfil.email}
         />
       </SectionPagina>
       <SectionPagina>
         <CardPequeno
-          image={iconePin}
-          name="Cidade:"
-          description={perfil.cidade}
+          imagem={iconePin}
+          cidade={perfil.cidade}
         />
       </SectionPagina>
 
@@ -94,13 +93,13 @@ function App() {
       <SectionPagina>
         <Titulos>Experiências profissionais</Titulos>
         <CardGrande
-          imagem={perfil.experiencia.icone}
-          nome={perfil.experiencia.empresa}
-          descricao={perfil.experiencia.descricao}
+          imagem={perfil.experiencia[0].icone}
+          nome={perfil.experiencia[0].empresa}
+          descricao={perfil.experiencia[0].descricao}
         />
 
         <CardGrande
-          image={perfil.experiencia[1].icone}
+          imagem={perfil.experiencia[1].icone}
           name={perfil.experiencia[1].empresa}
           descricao={perfil.experiencia[1].descricao}
         />
@@ -109,11 +108,12 @@ function App() {
       <SectionPagina>
         <Titulos>Minhas redes sociais</Titulos>
         <ImagemButton
-          imagem="./img/facebook-logo-3.png"
+         
+          imagem={iconeFB}
           texto="Facebook"
         />
         <ImagemButton
-          imagem="./img/twitter-logo-1-1.png"
+          imagem={iconeTT}
           texto="Twitter"
         />
       </SectionPagina>
